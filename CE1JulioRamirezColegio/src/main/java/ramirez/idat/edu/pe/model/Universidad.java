@@ -14,7 +14,7 @@ public class Universidad {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer idUniversidad;
-	private String univerdidad;
+	private String universidad;
 	
 	@OneToOne
 	private MallaCurricular mallaCurricular;
@@ -26,10 +26,10 @@ public class Universidad {
 		this.idUniversidad = idUniversidad;
 	}
 	public String getUniverdidad() {
-		return univerdidad;
+		return universidad;
 	}
 	public void setUniverdidad(String univerdidad) {
-		this.univerdidad = univerdidad;
+		this.universidad = univerdidad;
 	}	
 
 }
